@@ -15,6 +15,7 @@ echo "   Installing Miniconda3"
 echo "  "
 echo "-----------------------------------"
 tput sgr0;
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b
 tput setaf 1;
 echo "-----------------------------------"
