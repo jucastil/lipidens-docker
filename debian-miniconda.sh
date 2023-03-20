@@ -15,7 +15,7 @@
 #
 ################################
 
-docker run --name lipidens --hostname="lipidens" -d -p 5901:5901 -p 6901:6901 -e VNC_RESOLUTION=1920x1200  -v `pwd`/extra/:/extra/  --user $(id -u):$(id -g) consol/debian-xfce-vnc
+docker run --name lipidens --hostname="lipidens" -d - --privileged p 5901:5901 -p 6901:6901 -e VNC_RESOLUTION=1920x1200  -v `pwd`/extra/:/extra/  --user $(id -u):$(id -g) consol/debian-xfce-vnc
 docker exec -it lipidens "/extra/install.sh"
 
 
